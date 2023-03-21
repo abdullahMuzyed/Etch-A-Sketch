@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9052871148459384) 38%, rgb(37, 51, 155) 95%);
+}
+
+#container{
+    position: relative;
+    top: 50px;
+    background-color: white;
+    border: 1px solid #000;
+    font-size: 0;
+    margin: auto;
+    height: 400px;
+    width: 800px;
+    display: grid;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    border: none;
+}
+
+header{
+    text-align: center;
+    padding-top: 45px;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: wave 2000ms ease alternate infinite;
+    transition: all 0.4s ease;
+}
+@keyframes wave {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 50vw 10px;
+    }
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 22px auto 0px auto;
+}
+
+.new-btn , .random-btn , .clear-btn{
+padding: 15px;
+border: none;
+border-radius: 50px;
+font-weight: bold;
+color : cadetblue ; 
+background-color: white; 
+font-size: 20px;
+}
+
+.random-btn {
+    color: white;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.random-btn , .clear-btn , .new-btn:hover {
+    cursor: pointer;
+}
+
+button:focus { 
+    outline-style: none; 
+    cursor: pointer;
+}
+.clear-btn{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+}
+
+.new-btn{
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9052871148459384) 38%, rgba(0,212,255,1) 95%);
+}
+
+
+.wrap{
+    color: white;
+    font-size: 20px;
+}  
+#element{
+    display: block;
+    width: 88px;
+    height: 35px;
+    margin-left: 6px;
+}
+
+.grid-item{
+    margin:0;
+  padding:0;
+  border:none;
+  outline:1px solid #000;
+  display:inline-block;
+  border-radius:8px;
+}
+  
+
+@media (max-width: 921px){
+    .buttons{
+        width: 65%;
+    }
+    #container{
+        width: 650px;
+    }
+}
+
+@media (max-width: 718px){
+    .buttons{
+        width: 80%;
+    }
+    #container{
+        width: 550px;
+    }
+}
+
+@media (max-width: 570px){
+    .buttons{
+        width: 100%;
+    }
+    #container{
+        width: 450px;
+    }
+}
+ 
+    
